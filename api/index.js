@@ -11,8 +11,8 @@ export const getPlacesData = async (lat, lon, type) => {
       {
         headers: {
           "X-RapidAPI-Key":
-            "6289075925mshcd0fe7e4a37c172p18dbd1jsn766d28968340",
-          "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
+            "Your Key",
+          "X-RapidAPI-Host": "host name",
         },
         params: {
           latitude: lat ? lat : "25.251557",
@@ -34,7 +34,7 @@ export const getPlacesData = async (lat, lon, type) => {
 
 export const getLatLon = async (place) => {
   const data = await axios.get(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=1&appid=6df8be2ec1a7b1bf4253d871ca48b9ea`
+    `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=1&appid=your app id`
   );
   return data;
 };
